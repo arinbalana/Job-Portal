@@ -11,7 +11,7 @@ A full-stack Job Portal application built with **Java Spring Boot** that facilit
 - 🔍 Candidates can browse job listings and apply
 - 🛡️ Spring Security authentication and authorization
 - 📂 Entity relationships managed using Spring Data JPA
-- 🐘 MySQL for persistent data storage
+- 🐘 Postgres for persistent data storage
 
 ---
 
@@ -56,18 +56,18 @@ JobPortal/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Neha0108/JobPortal.git
+git clone https://github.com/arinbalana/Job-Portal.git
 cd JobPortal
 ```
 
-### 2. Configure MySQL
+### 2. Configure Postgres
 
 Update your `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/jobportal
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
+spring.datasource.username=your_postgres_username
+spring.datasource.password=your_postgres_password
 spring.jpa.hibernate.ddl-auto=update
 ```
 
@@ -78,7 +78,7 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-The app will be available at `http://localhost:8080`
+The app will be available at `http://localhost:8081`
 
 ---
 
